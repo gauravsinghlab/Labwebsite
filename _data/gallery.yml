@@ -1,9 +1,6 @@
 - image: /images/mitochondria_cellPanel.png
   alt: Mitochondria and cell imaging panel
   caption: Mitochondria and cell imaging panel.
-- image: /assets/images/lab-hero.png
-  alt: Abstract scientific visual with microscopy and data textures
-  caption: Research visual for the group homepage.
 - image: /images/mitochondria_cellPanel.png
   alt: Mitochondria and cell imaging panel detail
   caption: Representative organelle biology image.

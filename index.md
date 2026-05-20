@@ -19,7 +19,7 @@ description: Research group website for organelle biology, biosensors, and quant
 
   <div class="image-row" aria-label="Research image highlights">
     <img src="{{ '/images/mitochondria_cellPanel.png' | relative_url }}" alt="Mitochondria and cell imaging panel">
-    <img src="{{ '/assets/images/lab-hero.png' | relative_url }}" alt="Scientific illustration with microscopy textures and data patterns">
+    <img src="{{ '/images/mitochondria_cellPanel.png' | relative_url }}" alt="Mitochondria and cell imaging panel detail">
     <img src="{{ '/images/mitochondria_cellPanel.png' | relative_url }}" alt="Mitochondria and cell imaging panel detail">
   </div>
 

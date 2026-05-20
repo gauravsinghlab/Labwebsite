@@ -23,7 +23,7 @@ Jekyll GitHub Pages website for a research group.
 - `_data/gallery.yml`: editable gallery entries
 - `_posts/`: news posts
 - `assets/css/styles.css`: site styling
-- `assets/images/lab-hero.png`: generated visual asset used by the homepage and gallery
+- `images/`: lab image assets used by the homepage and gallery
 
 Replace placeholder names, emails, addresses, publications, and group text with verified information before publishing.
 
