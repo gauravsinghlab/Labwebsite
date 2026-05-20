@@ -201,7 +201,8 @@ def render_footer(site: Dict[str, Any]) -> str:
     year = dt.datetime.now().year
     return f"""<footer class="footer">
   <div class="wrap">
-    <p>&copy; {year} {html.escape(site.get('title', 'Site'))}. Built for GitHub Pages.</p>
+    <p>{html.escape(site.get('tagline', ''))}.</p>
+    <p>&copy; {year} {html.escape(site.get('title', 'Site'))}</p>
     <ul class="footer-links">
       <li><a href="{relative_url('/contact/', site)}">Contact</a></li>
       <li><a href="{site.get('github_url', '#')}" rel="noreferrer">GitHub</a></li>
@@ -235,8 +236,13 @@ def output_path_for_url(url: str) -> Path:
 
 def build() -> None:
     if OUT.exists():
-        shutil.rmtree(OUT)
-    OUT.mkdir(parents=True)
+        for child in OUT.iterdir():
+            if child.is_dir():
+                shutil.rmtree(child)
+            else:
+                child.unlink()
+    else:
+        OUT.mkdir(parents=True)
 
     site = load_yaml(ROOT / "_config.yml")
     site["baseurl"] = ""

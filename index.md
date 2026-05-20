@@ -1,73 +1,33 @@
 ---
 layout: default
 title: Home
-description: Research group website for cellular systems, disease mechanisms, and quantitative biology.
+description: Research group website for organelle biology, biosensors, and quantitative biology.
 ---
 
-<section class="hero" aria-label="GS Research Group">
-  <div class="hero-inner">
-    <p class="eyebrow">Cellular systems | Disease biology | Quantitative methods</p>
-    <h1>GS Research Group</h1>
-    <p class="lede">We investigate how cells sense stress, coordinate repair, and change state during development and disease. Our work combines experimental biology, imaging, molecular profiling, and computational analysis.</p>
-    <div class="hero-actions">
-      <a class="button" href="{{ '/research/' | relative_url }}">Explore Research</a>
-      <a class="button secondary" href="{{ '/contact/' | relative_url }}">Join the Group</a>
-    </div>
-  </div>
+<section class="home-title">
+  <h1>Organelle Biology</h1>
+  <ul class="profile-links" aria-label="Research group profiles">
+    <li><a href="{{ site.scholar_url }}" rel="noreferrer">Google Scholar</a></li>
+    <li><a href="{{ site.orcid_url }}" rel="noreferrer">ORCID</a></li>
+    <li><a href="{{ site.github_url }}" rel="noreferrer">GitHub</a></li>
+  </ul>
 </section>
 
-<section class="wrap intro-grid" aria-labelledby="welcome-heading">
-  <div class="intro-copy">
-    <p class="eyebrow">Welcome</p>
-    <h2 id="welcome-heading">A research environment for careful experiments and clear biological questions.</h2>
-    <p>Our group studies the mechanisms that connect cellular behavior to tissue-level outcomes. We are especially interested in how biological systems preserve function under stress, how damaged tissues adapt, and how quantitative measurements can reveal hidden regulatory states.</p>
-    <p>The site is organized around the same core structure as a modern academic lab page: research themes, people, publications, news, gallery, and contact information.</p>
-  </div>
-  <div class="stat-strip" aria-label="Research focus summary">
-    <div class="stat">
-      <strong>{{ site.data.research | size }}</strong>
-      <span>Core research themes ready to customize.</span>
-    </div>
-    <div class="stat">
-      <strong>{{ site.nav | size }}</strong>
-      <span>Primary site sections for a complete lab presence.</span>
-    </div>
-    <div class="stat">
-      <strong>0</strong>
-      <span>Build tools required on GitHub Pages.</span>
-    </div>
-  </div>
-</section>
+<section class="content-flow">
+  <h3>Welcome to the Gaurav Singh Research Group</h3>
+  <p>Our research is driven by a desire to understand how organelles preserve cellular function, communicate with one another, and adapt during stress. We are especially interested in mitochondria, intracellular signaling, and biosensor-based approaches that make dynamic biological states visible in living systems.</p>
 
-<section class="section-band">
-  <div class="wrap">
-    <div class="section-heading">
-      <p class="eyebrow">Research Themes</p>
-      <h2>Questions that connect mechanism, models, and measurement.</h2>
-    </div>
-    <div class="card-grid">
-      {% for theme in site.data.research %}
-        <article class="feature-card">
-          <span class="tag">{{ theme.tag }}</span>
-          <h3>{{ theme.title }}</h3>
-          <p>{{ theme.description }}</p>
-        </article>
-      {% endfor %}
-    </div>
+  <div class="image-row" aria-label="Research image highlights">
+    <img src="{{ '/images/mitochondria_cellPanel.png' | relative_url }}" alt="Mitochondria and cell imaging panel">
+    <img src="{{ '/assets/images/lab-hero.png' | relative_url }}" alt="Scientific illustration with microscopy textures and data patterns">
+    <img src="{{ '/images/mitochondria_cellPanel.png' | relative_url }}" alt="Mitochondria and cell imaging panel detail">
   </div>
-</section>
 
-<section class="wrap split" aria-labelledby="lab-culture-heading">
-  <div class="media-panel">
-    <img src="{{ '/assets/images/lab-hero.png' | relative_url }}" alt="Scientific illustration with cells, microscopy textures, and data patterns">
-  </div>
-  <div>
-    <p class="eyebrow">Lab Culture</p>
-    <h2 id="lab-culture-heading">Curiosity-driven science with practical attention to rigor.</h2>
-    <p>We value reproducible experiments, shared methods, direct mentorship, and open scientific conversation. Students and trainees are encouraged to build strong conceptual foundations while developing the technical fluency needed for modern biological research.</p>
-    <div class="button-row">
-      <a class="button" href="{{ '/members/' | relative_url }}">Meet the Group</a>
-      <a class="button" href="{{ '/publications/' | relative_url }}">Read Publications</a>
-    </div>
-  </div>
+  <p>At the Singh Lab, we combine cell biology, microscopy, molecular tools, and quantitative analysis to investigate organelle behavior in health and disease. Our work asks how intracellular compartments sense perturbation, how their responses shape cellular decisions, and how engineered reporters can reveal mechanisms that are otherwise difficult to measure.</p>
+
+  <p>Several themes connect our projects: organelle dynamics, stress adaptation, biosensor development, and quantitative image analysis. These themes converge on a practical goal: to build experiments that can explain how living cells maintain robustness and how those mechanisms fail in disease-relevant contexts.</p>
+
+  <p>We value careful experiments, reproducible analysis, and open scientific discussion. Explore our <a href="{{ '/research/' | relative_url }}">research</a> and <a href="{{ '/publications/' | relative_url }}">publications</a> to learn more about the group.</p>
+
+  <p>Feel free to <a href="{{ '/contact/' | relative_url }}">contact us</a>.</p>
 </section>
