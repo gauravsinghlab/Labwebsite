@@ -32,3 +32,29 @@
 ```text
 Read the repo and continue from the latest commit. Use TODO.md as the handoff note. We are fine-tuning the research group website locally before republishing.
 ```
+
+## Shared Folder Computer Switch
+
+The project folder is shared/synced between computers. Before switching machines:
+
+1. Stop the local preview server if it is running.
+2. Wait until the shared-folder sync has fully finished.
+3. On the other computer, open the project folder and run:
+
+```powershell
+git status -sb
+```
+
+Expected current state:
+
+```text
+## main...gauravsinghlab/main [ahead 5]
+```
+
+If Git reports a clean working tree, continue working. Do not edit the shared folder from both computers at the same time.
+
+To preview on the other computer:
+
+```powershell
+.\preview.ps1
+```
