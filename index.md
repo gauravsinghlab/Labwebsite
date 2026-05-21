@@ -18,7 +18,7 @@ description: Research group website for organelle biology, biosensors, and quant
   <p>Our research is driven by a desire to understand how organelles preserve cellular function, communicate with one another, and adapt during stress. We are especially interested in mitochondria, intracellular signaling, and biosensor-based approaches that make dynamic biological states visible in living systems.</p>
 
   <div class="image-row" aria-label="Research image highlights">
-    <img src="{{ '/images/mitochondria_cellPanel.png' | relative_url }}" alt="Mitochondria and cell imaging panel">
+    <img src="{{ '/images/Yeast_hetrogeneitybig.png' | relative_url }}" alt="Yeast heterogeneity microscopy image">
     <img src="{{ '/images/mitochondria_cellPanel.png' | relative_url }}" alt="Mitochondria and cell imaging panel detail">
     <img src="{{ '/images/mitochondria_cellPanel.png' | relative_url }}" alt="Mitochondria and cell imaging panel detail">
   </div>
