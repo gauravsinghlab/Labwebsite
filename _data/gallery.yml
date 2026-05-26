@@ -1,9 +1,3 @@
-- image: /images/home/mitochondria-cell-panel.png
-  alt: Mitochondria and cell imaging panel
-  caption: Representative organelle biology image.
 - image: /images/home/yeast-heterogeneity.png
   alt: Yeast heterogeneity microscopy image
   caption: Yeast heterogeneity and phenotypic variation.
-- image: /images/home/microscopy-heterogeneity.jpeg
-  alt: Microscopy image highlighting cellular heterogeneity
-  caption: Microscopy view from ongoing lab work.
