@@ -1,0 +1,23 @@
+hero:
+  image: /images/home/yeast-heterogeneity.png
+  alt: Yeast heterogeneity microscopy image
+
+slides:
+  - index: 0
+    index_label: 1
+    active: true
+    image: /images/home/yeast-heterogeneity.png
+    alt: Yeast heterogeneity microscopy image
+    caption: Yeast heterogeneity and phenotypic variation.
+  - index: 1
+    index_label: 2
+    active: false
+    image: /images/home/mitochondria-cell-panel.png
+    alt: Mitochondria and cell imaging panel detail
+    caption: Representative mitochondrial and cell imaging panel.
+  - index: 2
+    index_label: 3
+    active: false
+    image: /images/home/microscopy-heterogeneity.jpeg
+    alt: Microscopy image highlighting cellular heterogeneity
+    caption: Microscopy view from ongoing lab work.

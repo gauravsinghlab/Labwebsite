@@ -23,9 +23,21 @@ Jekyll GitHub Pages website for a research group.
 - `_data/gallery.yml`: editable gallery entries
 - `_posts/`: news posts
 - `assets/css/styles.css`: site styling
-- `images/`: lab image assets used by the homepage and gallery
+- `images/brand/`: header logo and brand assets
+- `images/home/`: homepage slideshow images
+- `images/gallery/`: gallery-specific web images if needed
+- `images/raw/`: original source images such as TIFFs
+- `_data/brand.yml`: brand/logo image paths
+- `_data/homepage.yml`: homepage slideshow image list
 
 Replace placeholder names, emails, addresses, publications, and group text with verified information before publishing.
+
+Image organization:
+
+- Keep the header logo path in `_data/brand.yml`.
+- Keep homepage slideshow images in `_data/homepage.yml`.
+- Use descriptive lowercase hyphenated filenames inside purpose-based folders under `images/`.
+- Treat `images/raw/` as source material, not direct web-facing assets.
 
 ## Preview Locally
 

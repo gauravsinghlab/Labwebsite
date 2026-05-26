@@ -1,11 +1,14 @@
 :root {
-  --ink: #202124;
-  --muted: #5f6368;
-  --link: #2f5597;
-  --link-hover: #183a70;
-  --rule: #e5e5e5;
-  --paper: #ffffff;
-  --soft: #f7f7f7;
+  --ink: #f5f7fa;
+  --muted: #b5bcc5;
+  --link: #ffffff;
+  --link-hover: #d9e0e8;
+  --rule: rgba(255, 255, 255, 0.18);
+  --paper: #050505;
+  --paper-strong: #000000;
+  --panel: #101010;
+  --panel-soft: #181818;
+  --soft: #202020;
   --max: 920px;
 }
 
@@ -20,8 +23,8 @@ html {
 body {
   margin: 0;
   color: var(--ink);
-  background: var(--paper);
-  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, #030303 0%, var(--paper) 40%, var(--paper-strong) 100%);
+  font-family: "Barlow", Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.65;
 }
@@ -47,8 +50,8 @@ a:hover {
   top: -4rem;
   z-index: 1000;
   padding: 0.55rem 0.75rem;
-  background: var(--ink);
-  color: #fff;
+  background: #ffffff;
+  color: #000000;
 }
 
 .skip-link:focus {
@@ -56,8 +59,12 @@ a:hover {
 }
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   border-bottom: 1px solid var(--rule);
-  background: #fff;
+  background: rgba(0, 0, 0, 0.94);
+  backdrop-filter: blur(10px);
 }
 
 .nav-wrap {
@@ -77,6 +84,7 @@ a:hover {
   font-size: 1.08rem;
   font-weight: 700;
   line-height: 1.1;
+  letter-spacing: 0.02em;
   text-decoration: none;
 }
 
@@ -95,6 +103,7 @@ a:hover {
   width: 100%;
   height: auto;
   border: 1px solid var(--rule);
+  border-radius: 6px;
   object-fit: cover;
 }
 
@@ -119,9 +128,8 @@ a:hover {
 
 .nav-links a {
   color: var(--muted);
-  font-family: "Barlow", Arial, Helvetica, sans-serif;
   font-size: 1.12rem;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .nav-links a:hover,
@@ -139,12 +147,13 @@ a:hover {
 }
 
 .home-title {
-  padding: 0.25rem 0 0.15rem;
+  padding: 0.4rem 0 0.2rem;
   text-align: center;
 }
 
 .home-title h1 {
   margin: 0;
+  color: #ffffff;
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(1.15rem, 2.4vw, 1.5rem);
   font-weight: 400;
@@ -197,6 +206,11 @@ a:hover {
   margin: 0.8rem 0;
 }
 
+.content-flow > h3,
+.content-flow > p {
+  max-width: 760px;
+}
+
 .page-hero {
   width: min(100% - 2rem, var(--max));
   margin: 0 auto;
@@ -236,8 +250,8 @@ a:hover {
 .image-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 0.75rem;
-  margin: 1.5rem 0 1.35rem;
+  gap: 1rem;
+  margin: 1.75rem 0 1.5rem;
 }
 
 .image-row img {
@@ -245,6 +259,81 @@ a:hover {
   aspect-ratio: 1.45 / 1;
   object-fit: cover;
   border: 1px solid var(--rule);
+  border-radius: 2px;
+}
+
+.home-hero {
+  position: relative;
+  margin: 1.75rem 0 1.5rem;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.home-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.home-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.38) 42%, rgba(0, 0, 0, 0.1) 76%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0) 62%);
+}
+
+.home-hero-overlay {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  bottom: auto;
+  z-index: 1;
+  width: min(54%, 500px);
+  padding: 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.18rem;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.68);
+  font-family: Arial, Helvetica, sans-serif;
+  transform: translateX(-50%);
+}
+
+.home-hero-overlay h1 {
+  margin: 0;
+  color: #f4e7a6 !important;
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.02;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+.home-hero-quote {
+  margin: 0;
+  max-width: 30ch;
+  color: #e7edf5;
+  font-size: 0.95rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.28);
+}
+
+.home-hero-overlay .home-intro {
+  max-width: none;
+  margin: 0;
+  color: #e6ddd0 !important;
+  font-size: 0.84rem;
+  line-height: 1.35;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
+}
+
+.home-hero-overlay .home-intro-highlight {
+  color: #f4e7a6 !important;
+}
+
+.home-hero-overlay > .home-intro + .home-intro {
+  margin-top: 0.32rem;
 }
 
 .wrap {
@@ -253,7 +342,7 @@ a:hover {
 
 .section-band {
   border-top: 1px solid var(--rule);
-  background: #fff;
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .section-heading {
@@ -283,15 +372,16 @@ a:hover {
 .news-card,
 .gallery-card,
 .contact-card {
-  border-top: 1px solid var(--rule);
-  background: #fff;
+  border: 1px solid var(--rule);
+  background: var(--panel);
 }
 
 .feature-card,
 .publication-card,
 .news-card,
 .contact-card {
-  padding: 1rem 0;
+  padding: 1rem 1rem 1.05rem;
+  border-radius: 2px;
 }
 
 .feature-card .tag {
@@ -332,7 +422,8 @@ a:hover {
   display: grid;
   grid-template-columns: 80px minmax(0, 1fr);
   gap: 1rem;
-  padding: 1rem 0;
+  padding: 1rem;
+  border-radius: 2px;
 }
 
 .avatar {
@@ -413,6 +504,8 @@ a:hover {
 .gallery-card {
   margin: 0;
   border: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .gallery-card img {
@@ -420,6 +513,7 @@ a:hover {
   aspect-ratio: 1.25 / 1;
   object-fit: cover;
   border: 1px solid var(--rule);
+  border-radius: 2px;
 }
 
 .gallery-card figcaption {
@@ -451,16 +545,18 @@ a:hover {
   align-items: center;
   justify-content: center;
   padding: 0.48rem 0.8rem;
-  border: 1px solid var(--link);
-  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.04);
   color: var(--link);
   font-weight: 700;
 }
 
 .button:hover,
 .button.secondary:hover {
-  background: var(--soft);
+  background: var(--panel-soft);
   color: var(--link-hover);
+  text-decoration: none;
 }
 
 .button-row {
@@ -474,6 +570,7 @@ a:hover {
   margin-top: 2rem;
   border-top: 1px solid var(--rule);
   color: var(--muted);
+  background: transparent;
 }
 
 .footer .wrap {
@@ -490,6 +587,10 @@ a:hover {
 }
 
 @media (max-width: 720px) {
+  .site-header {
+    position: static;
+  }
+
   .nav-links {
     justify-content: flex-start;
   }
@@ -498,6 +599,16 @@ a:hover {
   .gallery-grid,
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .home-hero-overlay {
+    top: 30%;
+    left: 50%;
+    bottom: auto;
+    width: auto;
+    max-width: none;
+    padding: 0.85rem;
+    transform: translateX(-50%);
   }
 
   .person-card {
@@ -517,6 +628,19 @@ a:hover {
 
   .home-title {
     text-align: left;
+  }
+
+  .home-hero h1 {
+    font-size: 1.45rem;
+  }
+
+  .home-hero-quote {
+    font-size: 0.9rem;
+  }
+
+  .home-intro {
+    font-size: 0.8rem;
+    line-height: 1.34;
   }
 
   .profile-links,

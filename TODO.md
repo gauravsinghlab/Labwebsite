@@ -6,8 +6,8 @@
 - The site is currently being fine-tuned locally before republishing.
 - The layout has been restyled after `https://sumeetpalsingh.github.io/`: compact academic navigation, centered homepage title, text-first sections, simple image row, and restrained styling.
 - Generated/stock imagery was removed.
-- The landing page now uses `images/Yeast_hetrogeneitybig.png` as the first image.
-- The homepage image row now uses three real lab visuals: `Yeast_hetrogeneitybig.png`, `Dexter_neha.png`, and `mitochondria_cellPanel.png`.
+- The header logo path is now managed in `_data/brand.yml`.
+- The homepage slideshow image list is now managed in `_data/homepage.yml`.
 - `research.md` has been updated to match the current lab direction: organelle biology, biosensors, mitochondria, cellular heterogeneity, and quantitative image analysis.
 - Local preview works through `.\preview.ps1` at `http://127.0.0.1:4000/`.
 
@@ -18,7 +18,11 @@
 - `assets/css/styles.css`: main visual layout.
 - `_data/research.yml`: homepage/research theme data.
 - `_data/gallery.yml`: gallery image list.
-- `images/`: real lab image assets.
+- `images/brand/`: logo and brand assets.
+- `images/home/`: homepage slideshow assets.
+- `images/raw/`: original TIFF/source assets.
+- `_data/brand.yml`: current header logo configuration.
+- `_data/homepage.yml`: current homepage slideshow configuration.
 - `tools/preview.py`: lightweight local preview builder/server.
 
 ## Next Good Tasks

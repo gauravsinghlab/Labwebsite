@@ -5,22 +5,16 @@ description: Research group website for organelle biology, biosensors, and quant
 ---
 
 <section class="content-flow">
-  <div class="image-row" aria-label="Research image highlights">
-    <img src="{{ '/images/Yeast_hetrogeneitybig.png' | relative_url }}" alt="Yeast heterogeneity microscopy image">
-    <img src="{{ '/images/mitochondria_cellPanel.png' | relative_url }}" alt="Mitochondria and cell imaging panel detail">
-  </div>
-
-  <section class="home-title">
-    <h1>Do what works. But do something</h1>
+  <section class="home-hero" aria-label="Research image highlight">
+    <img src="{{ site.data.homepage.hero.image | relative_url }}" alt="{{ site.data.homepage.hero.alt }}">
+    <div class="home-hero-overlay">
+      <h1>Welcome!</h1>
+      <p class="home-intro">We are a new interdisciplinary research group being set up in the Department of Life Sciences at Shiv Nadar Institute of Eminence, Delhi NCR.</p>
+      <p class="home-intro">We build fluorescence tools to uncover new biology in living systems. Our current focus is how cellular organelles, especially mitochondria, maintain the physical state of their membranes. We ask whether changes in membrane physical state affect organelle function, and which molecular players regulate this process.</p>
+      <p class="home-intro">We use yeast and mammalian cell models to answer these questions, but we are not tied to any single model system. Over time, we hope to extend these ideas to animal models and more complex biological systems.</p>
+      <p class="home-intro home-intro-highlight">Our lab is just getting started, and we welcome students and research staff who want to work across disciplines - from designing probes and building microscopes to testing cell-biological mechanisms and analysing large imaging datasets.</p>
+      <p class="home-intro">We will recruit PhD students through SNU from August. We also welcome JRFs with their own funding, and interested postdocs who would like to apply for fellowships such as DBT-RA, NPDP, or related schemes.</p>
+      <p class="home-intro">If you are interested, please explore our <a href="{{ '/research/' | relative_url }}">research areas</a> and <a href="{{ '/contact/' | relative_url }}">contact us</a>.</p>
+    </div>
   </section>
-
-  <h3>Welcome to our Research Group</h3>
-
-  <p>At the Singh Lab, we combine cell biology, microscopy, molecular tools, and quantitative analysis to investigate organelle behavior in health and disease. Our work asks how intracellular compartments sense perturbation, how their responses shape cellular decisions, and how engineered reporters can reveal mechanisms that are otherwise difficult to measure.</p>
-
-  <p>Several themes connect our projects: organelle dynamics, stress adaptation, biosensor development, and quantitative image analysis. These themes converge on a practical goal: to build experiments that can explain how living cells maintain robustness and how those mechanisms fail in disease-relevant contexts.</p>
-
-  <p>We value careful experiments, reproducible analysis, and open scientific discussion. Explore our <a href="{{ '/research/' | relative_url }}">research</a> and <a href="{{ '/publications/' | relative_url }}">publications</a> to learn more about the group.</p>
-
-  <p>Feel free to <a href="{{ '/contact/' | relative_url }}">contact us</a>.</p>
 </section>

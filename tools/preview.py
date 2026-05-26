@@ -178,6 +178,9 @@ def render_loops(text: str, context: Dict[str, Any]) -> str:
 
 def render_header(site: Dict[str, Any], page: Dict[str, Any]) -> str:
     current_url = page.get("url", "/")
+    brand = site.get("data", {}).get("brand", {}) or {}
+    header_logo = brand.get("header_logo", "/images/brand/site-logo.png")
+    header_logo_alt = brand.get("header_logo_alt", "Singh Lab logo")
     links = []
     for item in site.get("nav", []):
         url = item["url"]
@@ -188,7 +191,7 @@ def render_header(site: Dict[str, Any], page: Dict[str, Any]) -> str:
   <nav class="nav-wrap" aria-label="Primary navigation">
     <a class="brand" href="{relative_url('/', site)}">
       <span class="brand-mark">
-        <img src="{relative_url('/images/Dexter_neha.png?v=20260525-1', site)}" alt="Singh Lab logo">
+        <img src="{relative_url(header_logo, site)}" alt="{html.escape(str(header_logo_alt))}">
       </span>
       <span>{html.escape(site.get('short_title', site.get('title', 'Site')))} <small>{html.escape(site.get('subtitle', ''))}</small></span>
     </a>
