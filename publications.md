@@ -6,14 +6,12 @@ permalink: /publications/
 ---
 
 <section class="page-hero">
-  <div class="wrap">
-    <p class="eyebrow">Publications</p>
-    <h1>Peer-reviewed work, preprints, and research outputs.</h1>
-    <p>Selected work can be grouped by year with DOI links, preprint links, and highlighted lab-member names.</p>
+  <div class="wrap members-intro publications-intro">
+    <h1>Publications (<a href="https://scholar.google.com/citations?user=iq-O6EwAAAAJ&amp;hl=en&amp;authuser=3" rel="noreferrer">Google Scholar</a>, # indicates co-corresponding author)</h1>
   </div>
 </section>
 
-<section class="wrap">
+<section class="wrap publications-list">
   {% for group in site.data.publications %}
     <h2 class="year-heading">{{ group.year }}</h2>
     <div class="pub-list">
@@ -26,7 +24,11 @@ permalink: /publications/
               {{ publication.title }}
             {% endif %}
           </h3>
-          <p class="meta">{{ publication.meta }}</p>
+          <p class="meta">
+            <span class="authors">{{ publication.authors }}</span>
+            <span class="journal">{{ publication.journal }}</span>
+            {% if publication.details %}<span class="details">{{ publication.details }}</span>{% endif %}
+          </p>
         </article>
       {% endfor %}
     </div>

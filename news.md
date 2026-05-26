@@ -6,10 +6,8 @@ permalink: /news/
 ---
 
 <section class="page-hero">
-  <div class="wrap">
-    <p class="eyebrow">News</p>
+  <div class="wrap members-intro">
     <h1>Updates from the group.</h1>
-    <p>Use concise posts for papers, grants, student awards, conference talks, outreach, openings, and milestones.</p>
   </div>
 </section>
 

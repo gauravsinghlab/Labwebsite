@@ -1,12 +1,79 @@
 - year: 2026
   items:
-    - title: Publication title to be added
-      meta: Authors, journal, DOI, and publication year.
-    - title: Preprint title to be added
-      meta: Authors, preprint server, DOI, and posting year.
+    - title: "A conserved Pho4-Pho84 axis ubiquitously maintains intracellular phosphate homeostasis in yeast"
+      authors: "Sreedharan S, Shetty K, Mendonca E, <span class=\"author-highlight\">Singh G</span>, Christian F and Laxman S*."
+      journal: "bioRxiv"
+      details: "(2026)."
+      url: "https://www.biorxiv.org/content/10.64898/2026.04.22.720069v1"
+    - title: "Lighting up mitochondrial membranes: Linking physical organization to electron transfer and redox signaling"
+      authors: "<span class=\"author-highlight\">Singh G</span># and Laxman S."
+      journal: "Current Opinion in Chemical Biology"
+      details: "in press (2026)."
+    - title: "Design principles and architecture of cellular nutrient signaling"
+      authors: "<span class=\"author-highlight\">Singh G</span>, Vaidya K, Laxman S."
+      journal: "Annual Review of Genetics"
+      details: "in press (2026)."
+    - title: "Designing Molecular Rotors for High-resolution STED Imaging of Mitochondria"
+      authors: "<span class=\"author-highlight\">Singh G</span>#, Ponuvel P, Dighe R, Sivaraman G, Kumar P, Gulyani A."
+      journal: "Under submission"
+      details: "(2026)."
 - year: 2025
   items:
-    - title: Publication title to be added
-      meta: Authors, journal, DOI, and publication year.
-    - title: Methods paper title to be added
-      meta: Authors, journal, DOI, and publication year.
+    - title: "Active control of mitochondrial network morphology by metabolism driven redox state"
+      authors: "<span class=\"author-highlight\">Singh G</span>*, Vengayil V*, Khanna A, Adhikary S, Laxman S."
+      journal: "PNAS"
+      details: "122, e2421953122 (2025)."
+      url: "https://doi.org/10.1073/pnas.2421953122"
+- year: 2023
+  items:
+    - title: "A molecular rotor FLIM probe reveals dynamic coupling between mitochondrial inner membrane fluidity and cellular respiration"
+      authors: "<span class=\"author-highlight\">Singh G</span>, George G, Raja S, Kandaswamy P, Kumar M, Thutupalli S, Laxman S, Gulyani A."
+      journal: "PNAS"
+      details: "120, e2213241120 (2023)."
+      url: "https://doi.org/10.1073/pnas.2213241120"
+- year: 2021
+  items:
+    - title: "A Tunable Palette of Molecular Rotors Allows Multicolor, Ratiometric Fluorescence Imaging and Direct Mapping of Mitochondrial Heterogeneity"
+      authors: "Raja SO, Sivaraman G, Biswas S, <span class=\"author-highlight\">Singh G</span>, Kalim F, Kandaswamy P, and Gulyani A."
+      journal: "ACS Applied Bio Materials"
+      details: "4(5), 4361-4372 (2021)."
+- year: 2016
+  items:
+    - title: "Enhancing Exciton Diffusion in Porphyrin Thin Films using Peripheral Carboalkoxy Groups to Influence Molecular Assembly"
+      authors: "Kaushal M, Ortiz AL, Kassel JA, Hall N, Lee TD, <span class=\"author-highlight\">Singh G</span>, Walter MG."
+      journal: "Journal of Materials Chemistry C"
+      details: "4, 5602-5609 (2016)."
+- year: 2015
+  items:
+    - title: "Efficient Intersystem Crossing using Singly Halogenated Carbomethoxyphenyl Porphyrins Measured using Delayed Fluorescence, Chemical Quenching, and Singlet Oxygen Emission"
+      authors: "Marin MD, Payerpaj S, Collier GS, Ortiz AL, <span class=\"author-highlight\">Singh G</span>, Jones M, Walter MG."
+      journal: "Physical Chemistry Chemical Physics"
+      details: "17, 29090-29096 (2015)."
+- year: 2014
+  items:
+    - title: "A Multipulse Time-Resolved Fluorescence Method for Probing Second-Order Recombination Dynamics in Colloidal Quantum Dots"
+      authors: "<span class=\"author-highlight\">Singh G</span>, Guericke MA, Song Q, and Jones M."
+      journal: "Journal of Physical Chemistry C"
+      details: "118, 14692-14702 (2014)."
+    - title: "Plasmon Coupling to Multi-Excited States in Colloidal Quantum Dots"
+      authors: "<span class=\"author-highlight\">Singh G</span>, Tan R, Castaneda J, Greytak AB, and Jones M."
+      journal: "Unpublished"
+      details: ""
+- year: 2012
+  items:
+    - title: "ZnO Decorated Luminescent Graphene as a Potential Gas Sensor at Room Temperature"
+      authors: "<span class=\"author-highlight\">Singh G</span>, Choudhary A, Haranath D, Joshi AG, Singh N, Singh S, Pasricha R."
+      journal: "Carbon"
+      details: "50, 385-394 (2012)."
+- year: 2011
+  items:
+    - title: "Structural, Optical and Electrical Properties of Nano-Structured Cd:ZnO Thin Films Prepared via Sol-Gel Derived Spin Coating Method"
+      authors: "<span class=\"author-highlight\">Singh G</span>, Srivastava AK, Senthil K, Tawale JS, Deepa M, Yong K."
+      journal: "Journal of Nanoengineering and Nanomanufacturing"
+      details: "1, 77-83 (2011)."
+- year: 2009
+  items:
+    - title: "Excitation of Coherent States: Wave Function Development and Analysis"
+      authors: "<span class=\"author-highlight\">Singh G</span>, Choudhary A, Seshadri TR."
+      journal: "arXiv:1412.0841 [quant-ph]"
+      details: "(2009)."

@@ -6,8 +6,7 @@ permalink: /research/
 ---
 
 <section class="page-hero">
-  <div class="wrap">
-    <p class="eyebrow">Research</p>
+  <div class="wrap members-intro">
     <h1>Organelle biology, biosensors, and quantitative cell biology.</h1>
     <p>We study how intracellular compartments sense stress, communicate with one another, and shape cellular decisions in living systems.</p>
   </div>
@@ -36,7 +35,6 @@ permalink: /research/
 <section class="section-band">
   <div class="wrap">
     <div class="section-heading">
-      <p class="eyebrow">Methods</p>
       <h2>Tools for measuring organelle behavior in living systems.</h2>
     </div>
     <div class="card-grid">

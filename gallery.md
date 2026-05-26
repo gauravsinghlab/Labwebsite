@@ -6,10 +6,8 @@ permalink: /gallery/
 ---
 
 <section class="page-hero">
-  <div class="wrap">
-    <p class="eyebrow">Gallery</p>
+  <div class="wrap members-intro">
     <h1>Images from research, teaching, and group life.</h1>
-    <p>Add microscopy images, lab photos, conference moments, outreach events, and publication covers.</p>
   </div>
 </section>
 
