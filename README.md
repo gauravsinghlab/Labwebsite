@@ -30,7 +30,7 @@ Jekyll GitHub Pages website for the Gaurav Singh Lab at SNIoE.
 - `_data/brand.yml`: brand/logo image paths
 - `_data/homepage.yml`: homepage slideshow image list
 
-Replace placeholder names, emails, addresses, publications, and group text with verified information before publishing. The homepage hero text currently sits on top of the image in a left-aligned overlay panel.
+Keep lab text, contact details, member information, and publication records verified before publishing. The homepage hero text currently sits on top of the image in a left-aligned overlay panel.
 
 Image organization:
 

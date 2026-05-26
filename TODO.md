@@ -27,8 +27,8 @@
 
 ## Next Good Tasks
 
-- Replace placeholder member entries in `_data/members.yml`.
-- Add real publication citations in `_data/publications.yml`.
+- Add member entries only after real people join the group.
+- Keep publication citations in `_data/publications.yml` current as papers move from preprint/submission to publication.
 - Decide whether the homepage image row should show one large image or three equal thumbnails.
 - Confirm whether TIFF files should stay in Git or be converted to web PNG/JPG copies only.
 - Replace generic methods in `_data/methods.yml` with any more specific instrumentation, model systems, or reporter names once confirmed.
