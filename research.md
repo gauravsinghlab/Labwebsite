@@ -22,20 +22,3 @@ permalink: /research/
   <h2>3. Using machine learning to understand and design biological tools</h2>
   <p>We are also interested in using protein language models and related approaches to help design better biosensors, fluorescent proteins, and molecular tools for cell biology. We are also interested in using AI/ML pipelines to analyse microscopy images, extract meaningful biological features, and follow cell-state changes over time.</p>
 </section>
-
-<section class="section-band">
-  <div class="wrap section-accent">
-    <div class="section-heading">
-      <h2>Tools for measuring organelle behavior in living systems.</h2>
-    </div>
-    <div class="card-grid">
-      {% for method in site.data.methods %}
-        <article class="feature-card">
-          <span class="tag">{{ method.tag }}</span>
-          <h3>{{ method.title }}</h3>
-          <p>{{ method.description }}</p>
-        </article>
-      {% endfor %}
-    </div>
-  </div>
-</section>

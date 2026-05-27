@@ -206,7 +206,6 @@ def render_footer(site: Dict[str, Any]) -> str:
     year = dt.datetime.now().year
     return f"""<footer class="footer">
   <div class="wrap">
-    <p>{html.escape(site.get('tagline', ''))}.</p>
     <p>&copy; {year} {html.escape(site.get('title', 'Site'))}</p>
     <ul class="footer-links">
       <li><a href="{relative_url('/contact/', site)}">Contact</a></li>
